@@ -3,9 +3,6 @@ import math
 def isPrime(n):
     if(n == 1 or n == 0):
         return False
-        
-    if( n % 2 == 0 and n > 2):
-        return False
     else:
         for i in range(2, int(math.sqrt(n))):
             if( n % i == 0):

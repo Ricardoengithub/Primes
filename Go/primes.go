@@ -8,10 +8,6 @@ import (
 func IsPrime(n int) bool {
 	if n == 1 || n == 0 {
 		return false
-	}
-
-	if n > 2 && n % 2 == 0 {
-		return false
 	}else{
 		for i := 2; i < int(math.Sqrt(float64(n))); i++ {
 			if n % i == 0{
